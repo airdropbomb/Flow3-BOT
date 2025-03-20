@@ -1,13 +1,12 @@
 # Flow3 BOT
 Flow3 BOT
 
-Register Here : [Flow3 Dashboard](https://dashboard.flow3.tech?ref=6AYewrGk3)
+Register Here : [Flow3 Dashboard](https://dashboard.flow3.tech/?ref=Df73XFUUi)
 Download Extension : [Flow3 Extension](https://chromewebstore.google.com/detail/flow3/lhmminnoafalclkgcbokfcngkocoffcp)
 
 ## Features
 
   - Auto Get Account Information
-  - Auto Run With [Monosans](https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/all.txt) Proxy - Choose 1
   - Auto Run With Private Proxy - Choose 2
   - Auto Run Without Proxy - Choose 3
   - Auto Claim Daily Check-In
@@ -23,7 +22,7 @@ Download Extension : [Flow3 Extension](https://chromewebstore.google.com/detail/
 
 1. **Clone The Repositories:**
    ```bash
-   git clone https://github.com/vonssy/Flow3-BOT.git
+   git clone https://github.com/airdropbomb/Flow3-BOT.git
    ```
    ```bash
    cd Flow3-BOT
@@ -58,12 +57,9 @@ python bot.py #or python3 bot.py
 
 ## Buy Me a Coffee
 
-- **EVM:** 0xe3c9ef9a39e9eb0582e5b147026cae524338521a
-- **TON:** UQBEFv58DC4FUrGqinBB5PAQS7TzXSm5c1Fn6nkiet8kmehB
-- **SOL:** E1xkaJYmAFEj28NPHKhjbf7GcvfdjKdvXju8d8AeSunf
-- **SUI:** 0xa03726ecbbe00b31df6a61d7a59d02a7eedc39fe269532ceab97852a04cf3347
+- **EVM:** 0x6Ff9f7991dDb946A096b937e5e02D9b7c422f89C
+- **TON:** UQDDzdF1SWLrsEVdgEPPDXyr4ZmbNY7O7iPTTGqjFH7hv5uV
+- **SOL:** FbYFzZh4UqDxbfr47psQuQ1BAfD6r1kAzvsvsJdbXV1B
 
 Thank you for visiting this repository, don't forget to contribute in the form of follows and stars.
 If you have questions, find an issue, or have suggestions for improvement, feel free to contact me or open an *issue* in this GitHub repository.
-
-**vonssy**
