@@ -183,7 +183,7 @@ class Flow3:
                 print(f"{Fore.RED + Style.BRIGHT}Invalid input. Enter a number (1, 2 or 3).{Style.RESET_ALL}")
     
     async def user_login(self, account: str, address: str, proxy=None, retries=5):
-        url = "https://api.flow3.tech/api/v1/user/login"
+        url = "https://api2.flow3.tech/user/login"
         data = json.dumps(self.generate_payload(account, address))
         headers = {
             **self.headers,
@@ -203,7 +203,7 @@ class Flow3:
                 return self.print_message(address, proxy, Fore.RED, f"GET Access Token Failed: {Fore.YELLOW+Style.BRIGHT}{str(e)}")
             
     async def user_stats(self, account: str, address: str, use_proxy: bool, proxy=None, retries=5):
-        url = "https://api.flow3.tech/api/v1/tasks/stats"
+        url = "https://api2.flow3.tech/api/task/get-user-task"
         headers = {
             **self.headers,
             "Authorization": f"Bearer {self.access_tokens[address]}"
@@ -225,7 +225,7 @@ class Flow3:
                 return self.print_message(address, proxy, Fore.RED, f"GET Earning Data Failed: {Fore.YELLOW+Style.BRIGHT}{str(e)}")
             
     async def daily_checkin(self, account: str, address: str, use_proxy: bool, proxy=None, retries=5):
-        url = "https://api.flow3.tech/api/v1/tasks/complete-daily"
+        url = "https://api2.flow3.tech/api/task/get-user-task-daily"
         headers = {
             **self.headers,
             "Authorization": f"Bearer {self.access_tokens[address]}",
@@ -249,7 +249,7 @@ class Flow3:
                 return self.print_message(address, proxy, Fore.RED, f"Check-In Failed: {Fore.YELLOW+Style.BRIGHT}{str(e)}")
             
     async def task_lists(self, account: str, address: str, use_proxy: bool, proxy=None, retries=5):
-        url = "https://api.flow3.tech/api/v1/tasks/"
+        url = "https://api2.flow3.tech/api/task/do-task"
         headers = {
             **self.headers,
             "Authorization": f"Bearer {self.access_tokens[address]}"
@@ -271,7 +271,7 @@ class Flow3:
                 return self.print_message(address, proxy, Fore.RED, f"GET Task Lists Failed: {Fore.YELLOW+Style.BRIGHT}{str(e)}")
             
     async def complete_tasks(self, account: str, address: str, task_id: int, title: str, use_proxy: bool, proxy=None, retries=5):
-        url = f"https://api.flow3.tech/api/v1/tasks/{task_id}/complete"
+        url = f"https://api2.flow3.tech/api/task/do-task/{task_id}/complete"
         headers = {
             **self.headers,
             "Authorization": f"Bearer {self.access_tokens[address]}",
@@ -296,7 +296,7 @@ class Flow3:
                 )
 
     async def send_ping(self, account: str, address: str, use_proxy: bool, proxy=None, retries=5):
-        url = "https://api.flow3.tech/api/v1/bandwidth"
+        url = "https://api2.flow3.tech/api/user/get-connection-quality"
         headers = {
             "Accept": "application/json, text/plain, */*",
             "Accept-Language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7",
